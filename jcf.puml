@@ -1,0 +1,12 @@
+@startuml jcf
+interface Collection
+interface List
+interface Set
+class ArrayList
+class HashSet
+
+Collection <|-- List
+Collection <|-- Set
+List <|.. ArrayList
+Set <|.. HashSet
+@enduml
